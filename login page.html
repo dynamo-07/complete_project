@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(page.jpg);
+            background-size: cover;
+            overflow: hidden;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: inherit;
+            filter: blur(8px);
+            z-index: -1;
+        }
+        .Container {
+            text-align: center;
+            padding: 50px;
+            border: 2px solid black;
+            border-radius: 45px;
+            background-color: rgba(255, 255, 255, 0.655);
+            width: 400px;
+            font-size: xx-large;
+        }
+        h1 {
+            font-family: cursive;
+        }
+        input {
+            background-color: transparent;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .submit input[type="submit"] {
+            background-color: magenta;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 150px;
+}
+
+        .submit input[type="submit"]:hover {
+            background-color: lightslategray;
+        }
+        a {
+            font-size: medium   ;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <form action="landpage.html">
+        <div class="Container">
+            <h1>Login</h1>
+            <div class="user">
+                <label for="user">Username</label>
+                <input type="text" id="user" required>
+            </div>
+            <div class="pass">
+                <label for="pass">Password</label>
+                <input type="password" id="pass" required>
+            </div>
+            <a href="forgot page.html">Forgot Password</a>
+            <div class="pass">
+                <input type="submit">
+            </div>
+        </div></form>
+</body>
+</html>

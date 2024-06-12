@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly with maximum space between them */
+    }
+
+    .product-card {
+      width: calc(33.33% - 10px); /* Three products per row with some spacing */
+      margin-bottom: 20px; /* Adjust the margin to create space between rows */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-sizing: border-box; /* Ensure border and padding are included in the width */
+      text-decoration: none; /* Remove default link underline */
+      color: inherit; /* Inherit text color from parent */
+      transition: box-shadow 0.3s; /* Add transition effect */
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+    }
+
+    .product-details p {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #009688;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #009688;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/31JrgD35TfL.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Jayantu Boy's Solid Cotton Slim Fit Jeans | Mid Rise Denim Pant for Kids (Pack of 1)</h2>
+        <p>This boys super comfortable, breatheable, stretchable jeans is slim fit and mid rise. The product has super handfeel and is Ice washed to create beautiful Light Blue shade. Multiple wash treatement and trims precisioned to perfectness bring out the best of this product. This product is super fashionable yet easy to carry and evergreen. The elasticated/ expandable waist gives it a super feature to grow as your boy grows over the years. Hence, making the product last long, sustainable and away from fast fashion.</p>
+        <div class="price"> ₹699</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/31PRM86Kh2L.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Ambika Enterprises Boys' Skinny Fit Stretch Denim Jeans, 5-Pocket Style, Zipper Fly & Button Closure(Pack of 1)</h2>
+        <p>Stay stylish, stay comfortable and stay true to your self with your go-to kidswear brand from the house of . Be a style icon in these Slim Fit Washed Stretch Jeans. High on style and quality, these uber cool & classy washed stretchable jeans are as versatile as they are comfortable. Made with premium cotton and lycra fabric, these jeans offer increased stretchability, comfort and freedom of movement so kids can be kids! What's more, they come with elasticised waists to accommodate growth spurts. Perfect for casual, evening & party wear, pair these in-vogue slim fit jeans with any and never go out of style! So go ahead, stand apart from the crowd and create your own trends. And follow no one else but yourself.</p>
+        <div class="price">₹799</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71EK0Gbqz3L._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>ADBUCKS Boys Jeans Stretchable Denim Fabric Regular Fit Button with Fly Zip</h2>
+        <p>Adbucks Boys Jeans Regular Fit with strechable fabric zip and button closer</p>
+        <div class="price"> ₹711</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/7174oXdUsuL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>
+          ADBUCKS Boys Jeans Stretchable Denim Fabric Regular Fit Button with Fly Zip</h2>
+        <p>Adbucks Boys Jeans Regular Fit with strechable fabric zip and button closer</p>
+        <div class="price">₹711</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61ZW3u0iWfL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>ADBUCKS Boys' Regular Fit Solid Joggers</h2>
+        <p>ADBUCKS Boys' Regular Fit Solid Joggers</p>
+        <div class="price"> ₹599</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61jxgEdI69L._SY741_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Boys Cargo Jogger Pants - Pure Cotton - Comfort Fit - Cargo Pockets - Available in L and XL</h2>
+        <p>UNOseven - A perfect brand designed for the kid’s wear. The collection displayed is made of good quality fabrics. Every child should try our wide range of Kids Wear - Boy's Joggers , Boy's Boxer shorts , Boys Sleeveless, Halfsleeves and Fullsleeves T-Shirts, Boys Pyjamas, Girls Pants, Girls Shorts and much more to add. Our aim is to provide our wearer - perfect and comfort fit. We make for age 7 to 16 years old. We request you to please do check out the size chart before selecting the correct size which will save your time on returns.</p>
+        <div class="price">  ₹699</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+</body>
+</html>

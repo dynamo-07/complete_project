@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly with maximum space between them */
+    }
+
+    .product-card {
+      width: calc(33.33% - 10px); /* Three products per row with some spacing */
+      margin-bottom: 20px; /* Adjust the margin to create space between rows */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-sizing: border-box; /* Ensure border and padding are included in the width */
+      text-decoration: none; /* Remove default link underline */
+      color: inherit; /* Inherit text color from parent */
+      transition: box-shadow 0.3s; /* Add transition effect */
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+    }
+
+    .product-details p {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #009688;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #009688;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/616dc+82PqL._SX679_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>BIBA Girls Voile Suit Set</h2>
+        <p>The Biba Girl's Blue Solid Voile Tired Suit Set is a perfect blend of traditional and modern styling for young girls. The set includes a Kurta, Churidar and Dupatta, all in a beautiful blue solid color. The Kurta has a tired fit and is adorned with intricate embroidery, adding a touch of elegance to the ensemble. The voile material used for the set is lightweight and flowy, making it perfect for formal occasions. The churidar complements the kurta perfectly and gives the overall look a traditional touch. The dupatta is made of net and has pom-poms on its edges, adding a playful and trendy vibe to the outfit. This set is perfect for weddings, festivals, and special occasions and will make your little girl look and feel her best.</p>
+        <div class="price">₹1,820</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71+bsuWgqCL._SX679_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>BIBA GIRL PRINTED RELAXED KID</h2>
+        <p>Upgrade your little girl's wardrobe with this stylish and comfortable kurta set from Biba.Introducing the Biba Girl's Mint Green Printed Cotton Tired Kurta Set. This two-piece set includes a sleeveless kurta with a tired fit and v-neck, paired with a matching salwar. The kurta and salwar feature a beautiful white print all over, complemented by delicate lace on the hem for a graceful touch. Perfect for any occasion, this set is made from soft and breathable cotton for ultimate comfort.</p>
+        <div class="price"> ₹1,300</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/51RURyWhaeL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>VASTRAMAY Girls' Chikankari Cotton Kurta And Leggings Set</h2>
+        <p>Fabric: Cotton | Contents: Pure Cotton Lukhnowi Chikankari Anarkali Kurta With Cotton Hosiery Leggings</p>
+        <div class="price"> ₹1,349</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61RgE1i5ZJL._SY741_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>
+          LILPICKS Girls Lehenga Choli Set</h2>
+        <p>LilPicks is a child-centered brand focusing on styling the little bundles of joy since it's inception in the year, 2017. Over a span of just 4+ years, LilPicks has triumphantly delivering kids garments catering to all the needs of every season.</p>
+        <div class="price"> ₹1,254</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/51xWnGpMHJL._SX679_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>BIBA Girls Pink Cotton Blend Straight Kurta Relaxed Salwar Suit Set</h2>
+        <p>
+          Introducing the Biba Girl's Pink Solid Poly Chanderi Straight Suit Set - a perfect blend of style and comfort. This suit set is a must-have for your little girl's wardrobe.</p>
+        <div class="price">  ₹1,799</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61Gbk00LIGL._SX679_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>BIBA Cotton Girls Suit Set</h2>
+        <p>Introducing the Biba Girl's Lemon Yellow Printed Cotton A-Line Kurta Set. This two-piece set includes a sleeveless kurta with an A-line silhouette and round neck, paired with matching pants. The kurta and pants feature a beautiful white print all over, adding a playful and trendy touch to the overall look. Perfect for any casual occasion, this set is made from soft and breathable cotton for ultimate comfort. The bright lemon yellow color will make your fashionista stand out in the crowd.</p>
+        <div class="price"> ₹1,099</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+</body>
+</html>

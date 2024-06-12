@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly with maximum space between them */
+    }
+
+    .product-card {
+      width: calc(33.33% - 10px); /* Three products per row with some spacing */
+      margin-bottom: 20px; /* Adjust the margin to create space between rows */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-sizing: border-box; /* Ensure border and padding are included in the width */
+      text-decoration: none; /* Remove default link underline */
+      color: inherit; /* Inherit text color from parent */
+      transition: box-shadow 0.3s; /* Add transition effect */
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+    }
+
+    .product-details p {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #009688;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #009688;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/610ZOmI8H1L._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Allen Solly Men Regular Fit Shirt</h2>
+        <p>Update your look with this Green Print Custom Fit shirt from Allen Solly Jeans by Allen Solly and enjoy the attention.</p>
+        <div class="price"> ₹1,199</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61+3s3sYTWL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>The Souled Store Men Shirt</h2>
+        <p>Official Licensed Looney Tunes Summer Shirt.When life is tough, just shrug it off like Daffy!Wear your confidence on your sleeve with this print, and let the world know that you're not one to be beat! When you couldn't care less and don't want to say it out loud, let your shirt do the talking. It's super funny and will add a fun dash of quirkiness to your outfit!(Ps- this shirt repels annoying people)</p>
+        <div class="price"> ₹999</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81ak-UtoxtL._SX679_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Pepe Jeans Men's Regular Fit Shirt</h2>
+        <p>Printed Poplin Shirts With Long Sleeve Without Pocket Softner Wash Branding At Side Seam</p>
+        <div class="price"> ₹989</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71NPolvqlZL._SY741_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>
+          The Souled Store Official TMNT: Ninja Power Men and Boys Button Front Short Sleeve All Over Print Oversized Fit Shirts White Mens Oversized Graphic Shirts Casual Full Sleeve Casual Streat wear
+</h2>
+        <p>Homegrown Indian Brand - One-stop-shop for Official Merch of all your favorite superheroes, films, TV shows and cartoons</p>
+        <div class="price">  ₹849</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/718+kv0nDSS._SY741_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>The Souled Store Marvel: Comic Pattern Mens and Boys Graphic Printed Cotton Hawaiian Shirts Multi-Colored Shirt for Men Casual Half Sleeves Regular Fit Printed Stylish Latest Cotton Summer</h2>
+        <p>
+          Sport Type: Mountaineering; Collar Style: Classic Collar; Sleeve Type: Half Sleeve; Department Name: Unisex-Adult; Color Name: Multicolour; Fit Type: Regular Fit; Occasion Type: Casual; Pattern Type: All Over Print
+</p>
+        <div class="price">  ₹899</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81kGucA-A6L._SX569_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Pepe Jeans Men's Regular Fit Shirt</h2>
+        <p>Pepe Jeans Men's Floral Regular Shirt</p>
+        <div class="price">  ₹858</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly with maximum space between them */
+    }
+
+    .product-card {
+      width: calc(33.33% - 10px); /* Three products per row with some spacing */
+      margin-bottom: 20px; /* Adjust the margin to create space between rows */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-sizing: border-box; /* Ensure border and padding are included in the width */
+      text-decoration: none; /* Remove default link underline */
+      color: inherit; /* Inherit text color from parent */
+      transition: box-shadow 0.3s; /* Add transition effect */
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+    }
+
+    .product-details p {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #009688;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #009688;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81Ox8gFyieL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Boys Red Checks Woven Full Sleeves Shirt</h2>
+        <p>Gini & Jony Boys Green Checks Woven Full Sleeves Shirt 12-18 Months</p>
+        <div class="price">₹₹552</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71hL7FQXtEL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Allen Solly Boy's Regular Fit Shirt</h2>
+        <p>Allen Solly Boys' Checkered Regular Fit Shirt. Allen Solly full sleeve shirt in Multi color.</p>
+        <div class="price">₹749</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71RIhnOb17L._SY741_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Allen Solly Boy's Regular Fit Shirt</h2>
+        <p>Allen Solly Junior Boys REGULAR Fit Shirt</p>
+        <div class="price">₹639</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/7118Izqqe6L._SY741_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>
+          Allen Solly Boy's Regular Fit Shirt</h2>
+        <p>100%Cotton</p>
+        <div class="price"> ₹739</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81KW-xIbz0L._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Allen Solly Boy's Regular Fit Shirt</h2>
+        <p>Allen Solly Junior Boys REGULAR Fit Shirt</p>
+        <div class="price">₹689</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71UENoWnAWL._SY741_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Allen Solly Boy's Shirt</h2>
+        <p>Allen Solly Junior Boys REGULAR Fit Shirt</p>
+        <div class="price"> ₹639</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+</body>
+</html>

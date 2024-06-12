@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly with maximum space between them */
+    }
+
+    .product-card {
+      width: calc(33.33% - 10px); /* Three products per row with some spacing */
+      margin-bottom: 20px; /* Adjust the margin to create space between rows */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-sizing: border-box; /* Ensure border and padding are included in the width */
+      text-decoration: none; /* Remove default link underline */
+      color: inherit; /* Inherit text color from parent */
+      transition: box-shadow 0.3s; /* Add transition effect */
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+    }
+
+    .product-details p {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #009688;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #009688;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61mjMGd4PAL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Ben Martin Men's Regular Fit Stretchable Denim Shorts</h2>
+        <p>Ben Martin Men's Regular Fit Stretchable Denim Shorts</p>
+        <div class="price">₹649</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61u2maZPP5L._SX679_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Instafab Plus Men's Distressed Denim Shorts for Casual Wear | 5 Pockets | Dark-Wash | Button Closure | Denim Shorts Crafted with Comfort with for Everyday Wear</h2>
+        <p>Ace weekend dressing in this blue solid Polo Neck T-shirt from Allen Solly by Allen Solly.</p>
+        <div class="price">  ₹699</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/616huMnOTIL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>DAMENSCH Men’s Regular Fit Cotton Blend Casual Lounge Shorts | Dual Pocket Sleep Shorts</h2>
+        <p>Lightweight champ: The Statement Lounge Shorts are the lightest weight shorts you’ve ever worn. It’s airy, light on body and feel like a flutter in the wind.</p>
+        <div class="price"> ₹708</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/51Z0xD03baL._SX679_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2> Wicked stitch Men Denim Shorts</h2>
+        <p>There are a lot of considerations to take into account while buying a denim item. E.g., Fit, Wash, Rise, Stretch Fit: Denim comes in a variety of fits</p>
+        <div class="price">  ₹799</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61Z4Q9K3bqL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Lymio Men Shorts || Men Shorts Cotton || Men Shorts Casual (Short)</h2>
+        <p> Men shorts || men shorts cotton || men shorts casual</p>
+        <div class="price"> ₹449</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/819O2lOCRfL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Amazon Brand - INKAST Men Denim Shorts</h2>
+        <p>INKAST Denim Co. brings you stylish stretch Denim shorts. Made in cotton stretch denim fabric, these take you from everyday to holiday in style and comfort.</p>
+        <div class="price"> ₹519</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+</body>
+</html>

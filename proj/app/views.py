@@ -29,3 +29,65 @@ def kidshirt(request):
     return render(request,'kidshirt.html')
 def kidtshirt(request):
     return render(request,'kidtshirt.html')
+def kurta1(request):
+    return render(request,'kurta1.html')
+def kurta2(request):
+    return render(request,'kurta2.html')
+def kurta3(request):
+    return render(request,'kurta3.html')
+def kurta4(request):
+    return render(request,'kurta4.html')
+def kurta5(request):
+    return render(request,'kurta5.html')
+def kurta6(request):
+    return render(request,'kurta6.html')
+def saree1(request):
+    return render(request,'saree1.html')
+def saree2(request):
+    return render(request,'saree2.html')
+def saree3(request):
+    return render(request,'saree3.html')
+def saree4(request):
+    return render(request,'saree4.html')
+def saree5(request):
+    return render(request,'saree5.html')
+def saree6(request):
+    return render(request,'saree6.html')
+def kp1(request):
+    return render(request,'kp1.html')
+def kp2(request):
+    return render(request,'kp2.html')
+def kp3(request):
+    return render(request,'kp3.html')
+def kp4(request):
+    return render(request,'kp4.html')
+def kp5(request):
+    return render(request,'kp5.html')
+def kp6(request):
+    return render(request,'kp6.html')
+def kts1(request):
+    return render(request,'kts1.html')
+def kts2(request):
+    return render(request,'kts2.html')
+def kts3(request):
+    return render(request,'kts3.html')
+def kts4(request):
+    return render(request,'kts4.html')
+def kts5(request):
+    return render(request,'kts5.html')
+def kts6(request):
+    return render(request,'kts6.html')
+def ks1(request):
+    return render(request,'ks1.html')
+def ks2(request):
+    return render(request,'ks2.html')
+def ks3(request):
+    return render(request,'ks3.html')
+def ks4(request):
+    return render(request,'ks4.html')
+def ks5(request):
+    return render(request,'ks5.html')
+def ks6(request):
+    return render(request,'ks6.html')
+def jacket(request):
+    return render(request,'jacket.html')

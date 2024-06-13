@@ -1,0 +1,138 @@
+{% extends 'index.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly with maximum space between them */
+      padding: 100px 100px 30px;
+    }
+
+    .product-card {
+      width: calc(33.33% - 10px); /* Three products per row with some spacing */
+      margin-bottom: 20px; /* Adjust the margin to create space between rows */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-sizing: border-box; /* Ensure border and padding are included in the width */
+      text-decoration: none; /* Remove default link underline */
+      color: inherit; /* Inherit text color from parent */
+      transition: box-shadow 0.3s; /* Add transition effect */
+      border-radius: 30px;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 500px;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+    }
+
+    .product-details p {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #009688;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #009688;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+    <div class="product-list">
+      <a href="#" class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61M-WG5MxvL._SY879_.jpg" alt="Product Image">
+        <div class="product-details">
+          <h2>CNMN IDry Jacket Breathable Jacket for Men - Lightweight, Single Layer - All Year Wear, Daily Wear, Biker Jacket</h2>
+          <p>Introducing our branded CNMN Breathable Summer Jacket for Men,</p>
+          <div class="price">  ₹498</div>
+          <button>Add to Cart</button>&emsp;
+          <button>Add to Cart</button>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <img src="https://m.media-amazon.com/images/I/81Ko4mfS+AL._SX679_.jpg" alt="Product Image">
+        <div class="product-details">
+          <h2>London Hills Full Sleeve Polyester Full Zip with Pocket Solid Men's Sports Track Standard Length Jacket</h2>
+          <p>STYLE REDEFINED: Elevate your fashion game with our Bomber Jacket that seamlessly blends timeless design with modern flair.</p>
+          <div class="price">  ₹699</div>
+          <button>Add to Cart</button>&emsp;
+          <button>Add to Cart</button>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61j2FBMg2LL._SX679_.jpg" alt="Product Image">
+        <div class="product-details">
+          <h2>Boldfit Winter Jacket for Men Quilted Hooded Winter Jackets for Men & Boys Full Sleeve Mens Jacket Monsoon Jackets for Men Jacket for Men Wear Bomber Jacket for Men Jerkin for Men Padded Jacket</h2>
+          <p>Lightweight champ: The Statement Lounge Shorts are the lightest weight shorts you’ve ever worn. It’s airy, light on body and feel like a flutter in the wind.</p>
+          <div class="price"> ₹708</div>
+          <button>Add to Cart</button>&emsp;
+          <button>Add to Cart</button>
+        </div>
+      </a> 
+    </div>
+    <div class="product-list">
+      <a href="#" class="product-card">
+        <img src="https://m.media-amazon.com/images/I/614WYWanM+L._SX679_.jpg" alt="Product Image">
+        <div class="product-details">
+          <h2>Campus Sutra Men Polyester Blue Colourblocked Short Length Windcheater Padded Hooded Jacket</h2>
+          <p>Campus Sutra Men Jacket</p>
+          <div class="price">₹979</div>
+          <button>Add to Cart</button>&emsp;
+          <button>Add to Cart</button>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61e0huifPrL._SY879_.jpg" alt="Product Image">
+        <div class="product-details">
+          <h2>VOXATI Men's Denim Jacket</h2>
+          <p>Material: Crafted with 100% Cotton sophisticated yet breathable fabric giving it a rich look, skin friendly fabric for comfort of wearing. These Dennis Lingo Truckers are cut to an easy regular fit with functional metal button up style.</p>
+          <div class="price">₹1,014</div>
+          <button>Add to Cart</button>&emsp;
+          <button>Add to Cart</button>
+        </div>
+      </a>
+      <a href="#" class="product-card">
+        <img src="https://m.media-amazon.com/images/I/610kEsUG4nL._SX679_.jpg" alt="Product Image">
+        <div class="product-details">
+          <h2>Dennis Lingo Men's Regular Fit Long Sleeve Button Down Panel Denim Jacket</h2>
+          <p>Pocket Style: 2 flap pockets at chest with button closure, 2 side slant pockets create an authentic utility look; Back Style: Back yoke with vertical seam on both sides at back</p>
+          <div class="price">₹1,218</div>
+          <button>Add to Cart</button>&emsp;
+          <button>Add to Cart</button>
+        </div>
+      </a> 
+    </div>
+  </body>
+</html>{% endblock %}

@@ -1,4 +1,138 @@
-{% extends 'index.html'%}
+{% extends 'index.html' %}
 {% block content %}
-<h2>list</h2>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly with maximum space between them */
+      padding: 100px 100px 30px;
+    }
+
+    .product-card {
+      width: calc(33.33% - 10px); /* Three products per row with some spacing */
+      margin-bottom: 20px; /* Adjust the margin to create space between rows */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-sizing: border-box; /* Ensure border and padding are included in the width */
+      text-decoration: none; /* Remove default link underline */
+      color: inherit; /* Inherit text color from parent */
+      transition: box-shadow 0.3s; /* Add transition effect */
+      border-radius: 30px;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 500px;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+    }
+
+    .product-details p {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #009688;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #009688;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61UE51azLWL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>XYXX Men's Regular Fit Polo Shirt</h2>
+        <p>With Nova, the traditional Polo makes a stylish comeback. We took the breathable and utterly smooth 100% super combed fabric that has a natural, luxe feel to create our t-shirts. We also went ahead and added ribbed cuffs for a snug fit. The cotton pique fabric adds an element of textural play, while the ribbed collar coupled with the two-button placket gives a smart sign-off to this classic silhouette. Shaped to a regular fit, these tagless designs are ideal for an effortless day-to-night look.</p>
+        <div class="price">  ₹594</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71eUwDk8z+L._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Allen Solly Men's Regular Fit Polo</h2>
+        <p>Ace weekend dressing in this blue solid Polo Neck T-shirt from Allen Solly by Allen Solly.</p>
+        <div class="price">  ₹699</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61kJBiDxCtL._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Sumiso Recycled Polyester Airfit Zipper Polo Men T-Shirt</h2>
+        <p>Introducing our Performance Fusion Airfit Zipper Polo T-Shirt – where sustainability meets functionality for the modern, active individual</p>
+        <div class="price"> ₹759</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+  <div class="product-list">
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61rDMm81+lL._SY741_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2> BULLMER Black Trendy Front and Back Printed Oversized Round Neck T-Shirt for Men</h2>
+        <p>BULLMER Printed Round Neck Oversized T-shirts is the perfect choice for Men . BULLMER premium quality cotton blended Tshirts makes you feel easier , Best Value , Superior Quality , Comfort Fit , Stretchable , Comfort Wear , Stylish Look . Amazing Bullmer designer collections makes your look smarter.</p>
+        <div class="price">  ₹298</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71x4rLhMkML._SY879_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Lymio Men T-Shirt || T-Shirt for Men || Plain T Shirt || T-Shirt (Polo-18-21)</h2>
+        <p> Men T-Shirt || T-Shirt for Men || Plain T Shirt || T-Shirt</p>
+        <div class="price">  ₹379</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a>
+    <a href="#" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81FbKJsXSpL._SY741_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>WEWOK Men's 100% Polyester Rich Solid Mandarin Chinese Collar T-Shirt - Regular Fit, Short Sleeve Polo - Soft & Comfortable Breathable Fabric - Stylish Outerwear for Men</h2>
+        <p>Everyday essential - Whether you’re lounging at home or running errands, these t-shirts offer unmatched comfort.</p>
+        <div class="price">₹499</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Add to Cart</button>
+      </div>
+    </a> 
+  </div>
+</body>
+</html>{% endblock %}

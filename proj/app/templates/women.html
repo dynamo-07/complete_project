@@ -1,4 +1,139 @@
 {% extends 'index.html' %}
 {% block content %}
-<h2>Whomens</h2>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Distribute items evenly with maximum space between them */
+      padding: 80px 120px 30px;
+    }
+
+    .product-card {
+      width: calc(33.33% - 10px); /* Three products per row with some spacing */
+      margin-bottom: 20px; /* Adjust the margin to create space between rows */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      box-sizing: border-box; /* Ensure border and padding are included in the width */
+      text-decoration: none; /* Remove default link underline */
+      color: inherit; /* Inherit text color from parent */
+      transition: box-shadow 0.3s; /* Add transition effect */
+      border-radius: 30px;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 500px;
+    }
+
+    .product-details {
+      padding: 20px;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+    }
+
+    .product-details p {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #009688;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #009688;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00796b;
+    }
+  </style>
+</head>
+<body>
+    <h2><center><u>Kurta's</u></center></h2>
+  <div class="product-list">
+    <a href="{% url 'saree1' %}" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/91z4qPYRi6L._AC_UY1100_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>Glory Sarees Women's Kanchipuram Art Silk Saree With Blouse Piece</h2>
+        <p>Explore the collection of beautifully designed Saree from Glory Sarees on Amazon. Each piece is elegantly crafted and will surely add to your wardrobe. Pair this piece with heels or flats for a graceful look.</p>
+        <div class="price">$19.99</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Buy  Now</button>
+      </div>
+    </a>
+    <a href="{% url 'saree2' %}" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81jKZwKrp8L._AC_UY1100_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>i Zibra Kanjivaram Silk Saree Wedding For Women Banarasi Sadi Original Kanchipuram Pure Paithani Pattu Sari </h2>
+        <p>Explore the collection of beautifully designed Saree from Glory Sarees on Amazon.</p>
+        <div class="price">$24.99</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Buy  Now</button>
+      </div>
+    </a>
+    <a href="{% url 'saree3' %}" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71p6neiu2CL._SL1500_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>SWORNOF Women's Patola Silk Saree With Unstitched Boluse Piece</h2>
+        <p>Product description Explore the collection of beautifully designed Saree from SWORNOF on Amazon. From the manufacturer saree womens saree Women's Saree One of the most graceful costumes made from unstitched fabric-the saree-the much loved choice for most Indian women can be worn in so many different ways.</p>
+        <div class="price">$29.99</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Buy  Now</button>
+      </div>
+    </a> 
+  </div>
+  <div class="product-list">
+    <a href="{% url 'saree4' %}" class="product-card">
+      <img src="https://m.media-amazon.com/images/I/810fvmKzXML._AC_UY1100_.jpg" alt="Product Image">
+      <div class="product-details">
+        <h2>SWORNOF Womens Kanjivaram Silk sequence sarees for women Kanchipuram saree With Boluse Piece</h2>
+        <p>Explore the collection of beautifully designed sarees from "SWORNOF" on Amazon. Each piece is elegantly crafted and will surely add to your wardrobe.</p>
+        <div class="price">$19.99</div>
+        <button>Add to Cart </button>&emsp;
+        <button>Buy  Now</button>
+      </div>
+    </a>
+    <a href="{% url 'saree5' %}" class="product-card">
+      <img src="https://i.pinimg.com/736x/4d/4c/09/4d4c09ebbbc25cf454c8a4af6f28752d.jpg" alt="Product Image">
+      <div cla ss="product-details">
+        <h2>GEERANG MART Womens Cotton Silk Saree<br></h2>
+        <p>Product description Explore the collection of beautifully designed Saree from SWORNOF on Amazon. From the manufacturer saree womens saree Women's Saree One of the most graceful costumes made from unstitched fabric-the saree-the much loved choice for most Indian women can be worn in so many different ways.</p>
+        <div class="price">$24.99</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Buy  Now</button>
+      </div>
+    </a>
+    <a href="{% url 'saree6' %}" class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUtlseXeepcSjLjDEGjb6jjYtSeIoL4mejfA&s" alt="Product Image">
+      <div class="product-details">
+        <h2>SWORNOF Women's & Girl's Kota Doria Cotton Saree With Blouse Piece</h2>
+        <p>Explore the collection of beautifully designed sarees from "SWORNOF" on Amazon. Each piece is elegantly crafted and will surely add to your wardrobe.</p>
+        <div class="price">$29.99</div>
+        <button>Add to Cart</button>&emsp;
+        <button>Buy  Now</button>
+      </div>
+    </a> 
+  </div>
+</body>
+</html>{% endblock %}
